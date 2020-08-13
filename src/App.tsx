@@ -35,7 +35,7 @@ type NewNoteProps = {
   setNotes: Function
 }
 function NewNote({notes, setNotes}: NewNoteProps) {
-  const addNote = (values:NoteProps, { resetForm}:any) => {
+  const addNote = (values:NoteProps, { resetForm }:any) => {
     let newNotes = [...notes];
     newNotes.unshift(values);
     setNotes(newNotes);
