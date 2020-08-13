@@ -11,7 +11,7 @@ function App() {
         <h1>Notepad</h1>
         <NewNote notes={notes} setNotes={setNotes}/>
         <div className='notes-list'>
-          {notes.map(note => (<Note name={note.name} email={note.email} comment={note.comment}/>))}
+          {notes.map((note, index) => (<Note key={index} name={note.name} email={note.email} comment={note.comment}/>))}
         </div>
       </header>
     </div>
